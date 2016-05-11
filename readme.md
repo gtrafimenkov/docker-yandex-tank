@@ -4,13 +4,13 @@ This is [Yandex Tank](https://tech.yandex.com/tank/) installed in a Docker conta
 
 ## How to use it
 
-Create appropriate configuration file (ammo-file) and launch the Yandex Tank with command like:
+Create appropriate configuration file (load-file) and launch the Yandex Tank with command like:
 
 ```
-docker run --rm -it -v $(pwd):/ammo gtrafimenkov/yandex-tank -c /ammo/ammo.ini
+docker run --rm -it -v $(pwd):/ammo gtrafimenkov/yandex-tank -c /ammo/load.ini
 ```
 
-Example of ammo.ini:
+Example of load.ini:
 
 ```
 [phantom]
@@ -29,7 +29,7 @@ config=none
 plugin_rcheck =
 ```
 
-Example of ammo.ini to test an https server:
+Example of load.ini to test an https server:
 
 ```
 [phantom]
